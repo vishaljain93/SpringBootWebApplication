@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+</head>
+<body>
+<h1>Login</h1>
+<input type="text" name="username" placeholder="Enter Username" required><br />
+<input type="password" name="password" placeholder="Enter Password" required><br />
+<button name="Submit" class="btn">Login</button><br />
+<a href="/add" class="btn btn-success">Sign Up</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Add Employee</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+</head>
+<body>
+<h1>Add User</h1>
+<div>
+    <form th:object="${employee}" th:action="@{save}" action="#" method="post">
+        <input type="text" th:field="*{username}" class="form-control" placeholder="Enter Username" required/>
+        <input type="password" th:field="*{password}" class="form-control" placeholder="Enter Password" required/>
+        <input type="text" th:field="*{firstName}" class="form-control" placeholder="Enter First Name" required/>
+        <input type="text" th:field="*{lastName}" class="form-control" placeholder="Enter Last Name" required/>
+        <input type="text" th:field="*{age}" class="form-control" placeholder="Enter Age" required/>
+        <input type="text" th:field="*{salary}" class="form-control" placeholder="Enter Salary" required/>
+        <button name="Submit" class="btn" value="Save">Submit</button>
+    </form>
+</div>
+</body>
+</html>
